@@ -1,0 +1,21 @@
+background color : #0c0e27
+header : #262d4e
+text primary : ff69c9
+card bg : 070710
+
+
+connect buton gradient
+background-size: 200% auto;
+    background-image: -webkit-linear-gradient(left, #ff67cb 0%,#ffcc67 51%,#ff67cb);
+    background-image: linear-gradient(to right, #ff67cb 0%,#ffcc67 51%,#ff67cb);
+    border: 0;
+    color: #fff;
+    outline: none;
+    text-transform: uppercase;
+    z-index: 2;
+    transition: all 0.5s ease 0s;
+
+
+
+==> tertiary, -> giriş yapılınca
+==> primart buton -> giriş yokken
