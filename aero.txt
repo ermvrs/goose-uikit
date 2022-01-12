@@ -1,6 +1,6 @@
 background color : #0c0e27
 header : #262d4e
-text primary : ff69c9
+text primary : a064f5
 card bg : 070710
 
 

@@ -15,10 +15,10 @@ const getScale = ({ scale }: RadioProps) => {
 const getCheckedScale = ({ scale }: RadioProps) => {
   switch (scale) {
     case scales.SM:
-      return "12px";
+      return "8px";
     case scales.MD:
     default:
-      return "20px";
+      return "16px";
   }
 };
 
@@ -41,9 +41,9 @@ const Radio = styled.input.attrs({ type: "radio" })<RadioProps>`
     border-radius: 50%;
     content: "";
     height: ${getCheckedScale};
-    left: 6px;
+    left: 8px;
     position: absolute;
-    top: 6px;
+    top: 8px;
     width: ${getCheckedScale};
   }
 

@@ -44,7 +44,7 @@ const Input = styled.input<InputProps>`
   outline: 0;
   padding: 0 16px;
   width: 100%;
-
+  transition: box-shadow 0.2s;
   &::placeholder {
     color: ${({ theme }) => theme.colors.textSubtle};
   }
@@ -57,7 +57,7 @@ const Input = styled.input<InputProps>`
   }
 
   &:focus:not(:disabled) {
-    box-shadow: ${({ theme }) => theme.shadows.focus};
+    box-shadow: ${({ theme }) => theme.shadows.success};
   }
 `;
 
