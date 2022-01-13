@@ -125,7 +125,6 @@ const Menu: React.FC<NavProps> = ({
         <TopMenu 
           isPushed={isPushed}
           isMobile={isMobile}
-          showMenu={showMenu}
           isDark={isDark}
           toggleTheme={toggleTheme}
           langs={langs}
@@ -141,7 +140,7 @@ const Menu: React.FC<NavProps> = ({
           {profile && <Avatar profile={profile} />}
         </Flex>
       </StyledNav>
-      <BodyWrapper style={isMobile ? {display : 'flex'} : {display : 'none'}}>
+      <BodyWrapper >
         <Panel
           isPushed={isPushed}
           isMobile={isMobile}

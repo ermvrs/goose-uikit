@@ -41,6 +41,16 @@ export interface PanelProps {
     links: Array<MenuEntry>;
     priceLink: string;
 }
+export interface TopMenuProps {
+    isDark: boolean;
+    toggleTheme: (isDark: boolean) => void;
+    cakePriceUsd?: number;
+    currentLang: string;
+    langs: LangType[];
+    setLang: (lang: LangType) => void;
+    links: Array<MenuEntry>;
+    priceLink: string;
+}
 export interface NavProps extends PanelProps {
     account?: string;
     login: Login;
