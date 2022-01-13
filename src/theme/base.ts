@@ -42,6 +42,14 @@ const zIndices = {
   modal: 100,
 };
 
+const menuItemWidths = {
+  xs : '0px',
+  sm : '10px',
+  md : '20px',
+  lg : '120px',
+  xl : '168px'
+}
+
 export default {
   siteWidth: 1200,
   breakpoints,

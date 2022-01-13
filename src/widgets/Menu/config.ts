@@ -1,10 +1,5 @@
 export const links = [
   {
-    label: "Home",
-    icon: "HomeIcon",
-    href: "/",
-  },
-  {
     label: "Trade",
     icon: "TradeIcon",
     items: [
@@ -24,11 +19,6 @@ export const links = [
     href: "/farms",
   },
   {
-    label: "Pools",
-    icon: "PoolIcon",
-    href: "/syrup",
-  },
-  {
     label: "Lottery",
     icon: "TicketIcon",
     href: "/lottery",
@@ -37,28 +27,6 @@ export const links = [
     label: "NFT",
     icon: "NftIcon",
     href: "/nft",
-  },
-  {
-    label: "Info",
-    icon: "InfoIcon",
-    items: [
-      {
-        label: "Overview",
-        href: "https://pancakeswap.info",
-      },
-      {
-        label: "Tokens",
-        href: "https://pancakeswap.info/tokens",
-      },
-      {
-        label: "Pairs",
-        href: "https://pancakeswap.info/pairs",
-      },
-      {
-        label: "Accounts",
-        href: "https://pancakeswap.info/accounts",
-      },
-    ],
   },
   {
     label: "IFO",

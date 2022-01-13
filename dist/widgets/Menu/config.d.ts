@@ -1,16 +1,16 @@
 export declare const links: ({
     label: string;
     icon: string;
-    href: string;
-    items?: undefined;
-} | {
-    label: string;
-    icon: string;
     items: {
         label: string;
         href: string;
     }[];
     href?: undefined;
+} | {
+    label: string;
+    icon: string;
+    href: string;
+    items?: undefined;
 })[];
 export declare const socials: ({
     label: string;

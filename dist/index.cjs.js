@@ -357,7 +357,7 @@ var Icon$p = function (props) {
 
 var Icon$q = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
-        React__default['default'].createElement("image", { width: "32", height: "32", href: "https://aerospace.finance/assets/images/logo.png" })));
+        React__default['default'].createElement("image", { width: "32", height: "32", href: "/images/logo.png" })));
 };
 
 var Icon$r = function (props) {
@@ -2110,11 +2110,6 @@ var templateObject_1$y;
 
 var links = [
     {
-        label: "Home",
-        icon: "HomeIcon",
-        href: "/",
-    },
-    {
         label: "Trade",
         icon: "TradeIcon",
         items: [
@@ -2134,11 +2129,6 @@ var links = [
         href: "/farms",
     },
     {
-        label: "Pools",
-        icon: "PoolIcon",
-        href: "/syrup",
-    },
-    {
         label: "Lottery",
         icon: "TicketIcon",
         href: "/lottery",
@@ -2147,28 +2137,6 @@ var links = [
         label: "NFT",
         icon: "NftIcon",
         href: "/nft",
-    },
-    {
-        label: "Info",
-        icon: "InfoIcon",
-        items: [
-            {
-                label: "Overview",
-                href: "https://pancakeswap.info",
-            },
-            {
-                label: "Tokens",
-                href: "https://pancakeswap.info/tokens",
-            },
-            {
-                label: "Pairs",
-                href: "https://pancakeswap.info/pairs",
-            },
-            {
-                label: "Accounts",
-                href: "https://pancakeswap.info/accounts",
-            },
-        ],
     },
     {
         label: "IFO",
@@ -2450,7 +2418,7 @@ var LinkLabel$1 = styled__default['default'].div(templateObject_2$d || (template
     var isPushed = _a.isPushed, theme = _a.theme;
     return (isPushed ? theme.colors.textSubtle : theme.colors.textSubtle);
 });
-var TopMenuEntry = styled__default['default'].div(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  justify-content : center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background : ", ";\n  \n  color: ", ";\n  box-shadow: ", ";\n  width: 168px;\n  a {\n    display: flex;\n    align-items: center;\n    justify-content : center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    -webkit-background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 200% 100%;\n    font-weight: bold;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  justify-content : center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background : ", ";\n  \n  color: ", ";\n  box-shadow: ", ";\n  width: 168px;\n  a {\n    display: flex;\n    align-items: center;\n    justify-content : center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    -webkit-background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 200% 100%;\n    font-weight: bold;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
+var TopMenuEntry = styled__default['default'].div(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  justify-content : center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background : ", ";\n  \n  color: ", ";\n  box-shadow: ", ";\n  width: 120px;\n  a {\n    display: flex;\n    align-items: center;\n    justify-content : center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    -webkit-background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 200% 100%;\n    font-weight: bold;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  justify-content : center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background : ", ";\n  \n  color: ", ";\n  box-shadow: ", ";\n  width: 120px;\n  a {\n    display: flex;\n    align-items: center;\n    justify-content : center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    -webkit-background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 200% 100%;\n    font-weight: bold;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
     var secondary = _a.secondary;
     return (secondary ? "0 32px" : "0 16px");
 }, function (_a) {
@@ -2482,8 +2450,8 @@ TopMenuEntry.defaultProps = {
 };
 var templateObject_1$E, templateObject_2$d, templateObject_3$8;
 
-var Container$5 = styled__default['default'].div(templateObject_1$F || (templateObject_1$F = __makeTemplateObject(["\n  display: block;\n  flex-direction: column;\n  // Safari fix\n  flex-shrink: 0;\n  width : 168px;\n"], ["\n  display: block;\n  flex-direction: column;\n  // Safari fix\n  flex-shrink: 0;\n  width : 168px;\n"])));
-var AccordionContent$1 = styled__default['default'].div(templateObject_2$e || (templateObject_2$e = __makeTemplateObject(["\n  max-height: ", ";\n  position:absolute;\n  top:100;\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-bottom-radius : 6px;\n  width : 168px;\n"], ["\n  max-height: ", ";\n  position:absolute;\n  top:100;\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-bottom-radius : 6px;\n  width : 168px;\n"])), function (_a) {
+var Container$5 = styled__default['default'].div(templateObject_1$F || (templateObject_1$F = __makeTemplateObject(["\n  display: block;\n  flex-direction: column;\n  // Safari fix\n  flex-shrink: 0;\n  width : 120px;\n"], ["\n  display: block;\n  flex-direction: column;\n  // Safari fix\n  flex-shrink: 0;\n  width : 120px;\n"])));
+var AccordionContent$1 = styled__default['default'].div(templateObject_2$e || (templateObject_2$e = __makeTemplateObject(["\n  max-height: ", ";\n  position:absolute;\n  top:100;\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-bottom-radius : 6px;\n  width : 120px;\n"], ["\n  max-height: ", ";\n  position:absolute;\n  top:100;\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-bottom-radius : 6px;\n  width : 120px;\n"])), function (_a) {
     var isOpen = _a.isOpen, maxHeight = _a.maxHeight;
     return (isOpen ? maxHeight + "px" : 0);
 }, function (_a) {

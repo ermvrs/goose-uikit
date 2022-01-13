@@ -19,7 +19,7 @@ const Container = styled.div`
   flex-direction: column;
   // Safari fix
   flex-shrink: 0;
-  width : 168px;
+  width : 120px;
 `;
 
 const AccordionContent = styled.div<{ isOpen: boolean; isPushed: boolean; maxHeight: number }>`
@@ -31,7 +31,7 @@ const AccordionContent = styled.div<{ isOpen: boolean; isPushed: boolean; maxHei
   border-color: ${({ isOpen, isPushed }) => (isOpen && isPushed ? "rgba(133, 133, 133, 0.1)" : "none")};
   border-style: solid;
   border-bottom-radius : 6px;
-  width : 168px;
+  width : 120px;
 `;
 
 const Accordion: React.FC<Props> = ({

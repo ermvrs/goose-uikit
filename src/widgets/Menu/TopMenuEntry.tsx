@@ -34,7 +34,7 @@ const TopMenuEntry = styled.div<Props>`
   
   color: ${({ theme }) => theme.colors.textSubtle};
   box-shadow: ${({ isActive, theme }) => (isActive ? `inset 0px -4px 0px ${theme.colors.primary}` : "none")};
-  width: 168px;
+  width: 120px;
   a {
     display: flex;
     align-items: center;
