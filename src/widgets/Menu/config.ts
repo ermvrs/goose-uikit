@@ -39,21 +39,6 @@ export const links = [
     href: "/nft",
   },
   {
-    label: "Profile & Teams",
-    icon: "GroupsIcon",
-    items: [
-      {
-        label: "Leaderboard",
-        href: "/",
-      },
-      {
-        label: "YourProfile",
-        href: "/",
-      },
-    ],
-    calloutClass: "rainbow",
-  },
-  {
     label: "Info",
     icon: "InfoIcon",
     items: [
@@ -185,6 +170,6 @@ export const socials = [
 ];
 
 export const MENU_HEIGHT = 64;
-export const MENU_ENTRY_HEIGHT = 48;
+export const MENU_ENTRY_HEIGHT = 64;
 export const SIDEBAR_WIDTH_FULL = 240;
 export const SIDEBAR_WIDTH_REDUCED = 56;

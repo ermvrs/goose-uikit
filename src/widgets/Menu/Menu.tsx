@@ -6,6 +6,7 @@ import { Flex } from "../../components/Flex";
 import { useMatchBreakpoints } from "../../hooks";
 import Logo from "./Logo";
 import Panel from "./Panel";
+import TopMenu from './TopMenu';
 import UserBlock from "./UserBlock";
 import { NavProps } from "./types";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
@@ -115,18 +116,32 @@ const Menu: React.FC<NavProps> = ({
     <Wrapper>
       <StyledNav showMenu={showMenu}>
         <Logo
+          isMobile={isMobile}
           isPushed={isPushed}
           togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
-        <Flex>Header menu</Flex>
+        <TopMenu 
+          isPushed={isPushed}
+          isMobile={isMobile}
+          showMenu={showMenu}
+          isDark={isDark}
+          toggleTheme={toggleTheme}
+          langs={langs}
+          setLang={setLang}
+          currentLang={currentLang}
+          cakePriceUsd={cakePriceUsd}
+          pushNav={setIsPushed}
+          links={links}
+          priceLink={priceLink}
+        />
         <Flex>
           <UserBlock account={account} login={login} logout={logout} />
           {profile && <Avatar profile={profile} />}
         </Flex>
       </StyledNav>
-      <BodyWrapper>
+      <BodyWrapper style={isMobile ? {display : 'flex'} : {display : 'none'}}>
         <Panel
           isPushed={isPushed}
           isMobile={isMobile}
