@@ -24,6 +24,9 @@ const Container = styled.div`
 
 const AccordionContent = styled.div<{ isOpen: boolean; isPushed: boolean; maxHeight: number }>`
   max-height: ${({ isOpen, maxHeight }) => (isOpen ? `${maxHeight}px` : 0)};
+  &:hover {
+    ${({ maxHeight }) => `${maxHeight}px`};
+  }
   position:absolute;
   top:100;
   transition: max-height 0.3s ease-out;
@@ -58,12 +61,12 @@ const Accordion: React.FC<Props> = ({
 
   return (
     <Container>
-      <TopMenuEntry onClick={handleClick} className={className}>
+      <TopMenuEntry onClick={handleClick} className={className} onMouseOver={() => setActiveAccordion(label)} onMouseLeave={() => setActiveAccordion('')}>
         {icon}
         <LinkLabel isPushed={isPushed}>{label}</LinkLabel>
         {isOpen ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
       </TopMenuEntry>
-      <AccordionContent
+      <AccordionContent onMouseOver={() => setActiveAccordion(label)} onMouseLeave={() => setActiveAccordion('')}
         isOpen={activeAccordion === label}
         isPushed={isPushed}
         maxHeight={React.Children.count(children) * MENU_ENTRY_HEIGHT}
