@@ -2451,9 +2451,12 @@ TopMenuEntry.defaultProps = {
 var templateObject_1$E, templateObject_2$d, templateObject_3$8;
 
 var Container$5 = styled__default['default'].div(templateObject_1$F || (templateObject_1$F = __makeTemplateObject(["\n  display: block;\n  flex-direction: column;\n  // Safari fix\n  flex-shrink: 0;\n  width : 120px;\n"], ["\n  display: block;\n  flex-direction: column;\n  // Safari fix\n  flex-shrink: 0;\n  width : 120px;\n"])));
-var AccordionContent$1 = styled__default['default'].div(templateObject_2$e || (templateObject_2$e = __makeTemplateObject(["\n  max-height: ", ";\n  position:absolute;\n  top:100;\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-bottom-radius : 6px;\n  width : 120px;\n"], ["\n  max-height: ", ";\n  position:absolute;\n  top:100;\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-bottom-radius : 6px;\n  width : 120px;\n"])), function (_a) {
+var AccordionContent$1 = styled__default['default'].div(templateObject_2$e || (templateObject_2$e = __makeTemplateObject(["\n  max-height: ", ";\n  &:hover {\n    ", ";\n  }\n  position:absolute;\n  top:100;\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-bottom-radius : 6px;\n  width : 120px;\n"], ["\n  max-height: ", ";\n  &:hover {\n    ", ";\n  }\n  position:absolute;\n  top:100;\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-bottom-radius : 6px;\n  width : 120px;\n"])), function (_a) {
     var isOpen = _a.isOpen, maxHeight = _a.maxHeight;
     return (isOpen ? maxHeight + "px" : 0);
+}, function (_a) {
+    var maxHeight = _a.maxHeight;
+    return maxHeight + "px";
 }, function (_a) {
     var isOpen = _a.isOpen, isPushed = _a.isPushed;
     return (isOpen && isPushed ? "rgba(133, 133, 133, 0.1)" : "none");
@@ -2471,11 +2474,11 @@ var Accordion$1 = function (_a) {
         }
     };
     return (React__default['default'].createElement(Container$5, null,
-        React__default['default'].createElement(TopMenuEntry, { onClick: handleClick, className: className },
+        React__default['default'].createElement(TopMenuEntry, { onClick: handleClick, className: className, onMouseOver: function () { return setActiveAccordion(label); }, onMouseLeave: function () { return setActiveAccordion(''); } },
             icon,
             React__default['default'].createElement(LinkLabel$1, { isPushed: isPushed }, label),
             isOpen ? React__default['default'].createElement(Icon$8, null) : React__default['default'].createElement(Icon$7, null)),
-        React__default['default'].createElement(AccordionContent$1, { isOpen: activeAccordion === label, isPushed: isPushed, maxHeight: React__default['default'].Children.count(children) * MENU_ENTRY_HEIGHT }, children)));
+        React__default['default'].createElement(AccordionContent$1, { onMouseOver: function () { return setActiveAccordion(label); }, onMouseLeave: function () { return setActiveAccordion(''); }, isOpen: activeAccordion === label, isPushed: isPushed, maxHeight: React__default['default'].Children.count(children) * MENU_ENTRY_HEIGHT }, children)));
 };
 var templateObject_1$F, templateObject_2$e;
 
