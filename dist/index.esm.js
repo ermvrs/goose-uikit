@@ -1876,7 +1876,7 @@ var Icon$P = function (props) {
 var Logo = function (_a) {
     var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
     return (React.createElement(Svg, __assign({ viewBox: "0 0 205 26" }, props),
-        React.createElement("image", { width: "205", height: "26", href: isDark ? "/images/aero/logo.png" : "/images/egg/logo.png" })));
+        React.createElement("image", { width: "205", height: "26", href: isDark ? "/images/aero/logo.png" : "/images/aero/logo.png" })));
 };
 
 var Icon$Q = function (props) {
@@ -2891,9 +2891,9 @@ var templateObject_1$N;
 
 var baseColors = {
     failure: "#DE2727",
-    primary: "#F37343",
-    primaryBright: "#F37343",
-    primaryDark: "#F37343",
+    primary: "#2EB086",
+    primaryBright: "#2EB086",
+    primaryDark: "#2EB086",
     secondary: "#7645D9",
     success: "#0fbe7a",
     warning: "#FFB237",
@@ -2901,10 +2901,10 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#1F1D36", backgroundDisabled: "#3c3742", contrast: "#E6F8F1", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", tertiary: "#FEECE9", text: "#E6F8F1", textDisabled: "#666171", textSubtle: "#F37343", borderColor: "#524B63", card: "#0B1018", white: '#FFFFFF', gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#1F1D36", backgroundDisabled: "#3c3742", contrast: "#E6F8F1", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", tertiary: "#FEECE9", text: "#E6F8F1", textDisabled: "#666171", textSubtle: "#2EB086", borderColor: "#524B63", card: "#0B1018", white: '#FFFFFF', gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#1E2225", backgroundDisabled: "#3c3742", contrast: "#E6F8F1", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", tertiary: "#FEECE9", text: "#E6F8F1", textDisabled: "#666171", textSubtle: "#F37343", borderColor: "#524B63", card: "#0B1018", white: '#FFFFFF', gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#1E2225", backgroundDisabled: "#3c3742", contrast: "#E6F8F1", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", tertiary: "#FEECE9", text: "#E6F8F1", textDisabled: "#666171", textSubtle: "#2EB086", borderColor: "#524B63", card: "#0B1018", white: '#FFFFFF', gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     } });
 
