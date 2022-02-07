@@ -134,7 +134,6 @@ const Menu: React.FC<NavProps> = ({
           cakePriceUsd={cakePriceUsd}
           pushNav={setIsPushed}
           links={links}
-          socials={socials}
           priceLink={priceLink}
         />
         <Flex>

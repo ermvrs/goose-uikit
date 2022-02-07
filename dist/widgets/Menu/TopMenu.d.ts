@@ -1,6 +1,6 @@
 import React from "react";
-import { PanelProps, PushedProps } from "./types";
-interface Props extends PanelProps, PushedProps {
+import { TopMenuProps, PushedProps } from "./types";
+interface Props extends TopMenuProps, PushedProps {
     isMobile: boolean;
 }
 declare const TopMenu: React.FC<Props>;

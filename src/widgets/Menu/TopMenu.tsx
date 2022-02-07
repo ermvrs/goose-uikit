@@ -6,9 +6,9 @@ import * as IconModule from "./icons";
 import TopAccordion from "./TopAccordion";
 import { TopMenuEntry, LinkLabel } from "./TopMenuEntry";
 import MenuLink from "./MenuLink";
-import { PanelProps, PushedProps } from "./types";
+import { TopMenuProps, PushedProps } from "./types";
 
-interface Props extends PanelProps, PushedProps {
+interface Props extends TopMenuProps, PushedProps {
   isMobile: boolean;
 }
 
