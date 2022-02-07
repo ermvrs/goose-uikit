@@ -47,6 +47,7 @@ export interface PanelProps {
   setLang: (lang: LangType) => void;
   links: Array<MenuEntry>;
   priceLink: string;
+  socials?: Array<MenuEntry>;
 }
 export interface TopMenuProps {
   isDark: boolean;

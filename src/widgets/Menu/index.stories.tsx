@@ -7,7 +7,7 @@ import Text from "../../components/Text/Text";
 import Menu from "./Menu";
 import { MenuEntry } from "./MenuEntry";
 import { LangType } from "./types";
-import { links } from "./config";
+import { links, socials } from "./config";
 
 export default {
   title: "Widgets/Menu",
@@ -32,6 +32,7 @@ export const Connected: React.FC = () => {
         cakePriceUsd={0.23158668932877668}
         links={links}
         profile={null}
+        socials={socials}
       >
         <div>
           <Heading as="h1" mb="8px">
@@ -69,6 +70,7 @@ export const NotConnected: React.FC = () => {
         setLang={noop}
         currentLang="EN"
         links={links}
+        socials={socials}
       >
         <div>
           <h1>Page body</h1>
@@ -105,6 +107,7 @@ export const WithNoProfile: React.FC = () => {
           profileLink: "/profile",
           noProfileLink: "/no-profile",
         }}
+        socials={socials}
       >
         <div>
           <Heading as="h1" mb="8px">
@@ -149,6 +152,7 @@ export const WithProfile: React.FC = () => {
           profileLink: "/profile",
           noProfileLink: "/no-profile",
         }}
+        socials={socials}
       >
         <div>
           <Heading as="h1" mb="8px">
